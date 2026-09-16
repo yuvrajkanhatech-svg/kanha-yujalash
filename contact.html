@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KANHA YUJALASH PVT LTD</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #2563eb;
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        body { color: var(--text-dark); background-color: var(--bg-light); line-height: 1.6; }
+
+        header { background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; }
+        .logo { font-size: 1.4rem; font-weight: 800; color: var(--primary); }
+        .logo span { color: var(--secondary); }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 600; }
+        .nav-links a.active { color: var(--secondary); }
+
+        .banner { background: var(--primary); color: white; padding: 3.5rem 2rem; text-align: center; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
+        .contact-card { background: white; border-radius: 12px; padding: 2rem; box-shadow: var(--shadow); border: 1px solid #e2e8f0; }
+        .contact-card h2 { color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 2px solid var(--bg-light); padding-bottom: 0.5rem; }
+
+        .exec-contact { display: flex; flex-direction: column; gap: 1.25rem; }
+        .exec-item { display: flex; align-items: center; gap: 1rem; padding: 0.75rem; background: var(--bg-light); border-radius: 8px; }
+        .exec-item i { font-size: 1.5rem; color: var(--secondary); background: white; padding: 10px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .exec-details h4 { font-size: 1rem; color: var(--primary); }
+        .exec-details p { font-size: 0.8rem; color: var(--secondary); font-weight: 700; text-transform: uppercase; }
+        .exec-details a { text-decoration: none; color: #475569; font-size: 0.9rem; word-break: break-all; }
+        .exec-details a:hover { color: var(--secondary); }
+
+        .web-box { background: linear-gradient(135deg, #1e293b, var(--primary)); color: white; padding: 1.5rem; border-radius: 10px; margin-top: 1.5rem; text-align: center; }
+        .web-box a { color: #60a5fa; font-weight: bold; text-decoration: none; font-size: 1.1rem; }
+
+        .address-box { margin-top: 1.5rem; background: #eff6ff; padding: 1.2rem; border-radius: 8px; border-left: 4px solid var(--secondary); }
+        .address-box h4 { color: var(--primary); margin-bottom: 0.4rem; display: flex; align-items: center; gap: 8px; }
+        .address-box p { font-size: 0.95rem; color: #334155; line-height: 1.5; }
+
+        footer { background: var(--primary); color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">KANHA <span>YUJALASH</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Loan Products</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Connect With Our Executive Team</h1>
+        <p>Get in touch with KANHA YUJALASH PVT LTD leadership for partnerships, queries, or loan services.</p>
+    </section>
+
+    <main class="container">
+        <div class="contact-grid">
+            
+            <!-- Key Executives Email Directory -->
+            <div class="contact-card">
+                <h2>Direct Executive Contacts</h2>
+                <div class="exec-contact">
+                    
+                    <div class="exec-item">
+                        <i class="fas fa-user-tie"></i>
+                        <div class="exec-details">
+                            <h4>Yuvraj Dewangan</h4>
+                            <p>Chief Executive Officer (CEO)</p>
+                            <a href="mailto:yuvraj.kanhatech@gmail.com"><i class="fas fa-envelope"></i> yuvraj.kanhatech@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="exec-item">
+                        <i class="fas fa-tasks"></i>
+                        <div class="exec-details">
+                            <h4>Laxminarayan Sahu</h4>
+                            <p>Chief Operating Officer (COO)</p>
+                            <a href="mailto:laxminarayan.kanhatech@gmail.com"><i class="fas fa-envelope"></i> laxminarayan.kanhatech@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="exec-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="exec-details">
+                            <h4>Shubham Yadav</h4>
+                            <p>Chief Risk Officer (CRO)</p>
+                            <a href="mailto:Shubham.kanhatech@gmail.com"><i class="fas fa-envelope"></i> Shubham.kanhatech@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="exec-item">
+                        <i class="fas fa-coins"></i>
+                        <div class="exec-details">
+                            <h4>Jagmohan Dewangan</h4>
+                            <p>Chief Financial Officer (CFO)</p>
+                            <a href="mailto:jagmohan.kanhatech@gmail.com"><i class="fas fa-envelope"></i> jagmohan.kanhatech@gmail.com</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Official Web & Registered Address -->
+            <div class="contact-card">
+                <h2>Corporate Support & Office</h2>
+                <p>For support, official documentation, channel partnerships, and loan tracking:</p>
+                
+                <div class="web-box">
+                    <i class="fas fa-globe" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                    <p>Official Portal & Support Desk:</p>
+                    <a href="http://WWW.kanhayujalash@support.in" target="_blank">WWW.kanhayujalash@support.in</a>
+                </div>
+
+                <!-- Business Address Added Here -->
+                <div class="address-box">
+                    <h4><i class="fas fa-map-marked-alt" style="color: var(--secondary);"></i> Registered Office Address</h4>
+                    <p><strong>KANHA YUJALASH PVT LTD</strong><br>
+                    Agrawal House, In Front of Hero Showroom,<br>
+                    Dongargarh, Rajnandgaon,<br>
+                    Chhattisgarh - 491445</p>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <h4 style="color: var(--primary); margin-bottom: 0.3rem;"><i class="fas fa-building"></i> Registered Business Entity</h4>
+                    <p style="font-size: 0.85rem; color: #64748b;">ROC Approved Company | Ministry of Corporate Affairs (MCA) Registered</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 KANHA YUJALASH PVT LTD. All Rights Reserved.</p>
+        <p style="font-size: 0.85rem; margin-top: 8px; color: #94a3b8;"><i class="fas fa-map-marker-alt"></i> Agrawal House, In Front of Hero Showroom, Dongargarh, Rajnandgaon, Chhattisgarh - 491445</p>
+    </footer>
+
+</body>
+</html>
