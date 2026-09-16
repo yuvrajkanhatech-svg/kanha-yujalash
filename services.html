@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Products - KANHA YUJALASH PVT LTD</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #2563eb;
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        body { color: var(--text-dark); background-color: var(--bg-light); line-height: 1.6; }
+
+        header { background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; }
+        .logo { font-size: 1.4rem; font-weight: 800; color: var(--primary); }
+        .logo span { color: var(--secondary); }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 600; }
+        .nav-links a.active { color: var(--secondary); }
+
+        .banner { background: var(--primary); color: white; padding: 3.5rem 2rem; text-align: center; }
+        .banner h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+        
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .service-card { background: white; border-radius: 12px; padding: 2rem; box-shadow: var(--shadow); border: 1px solid #e2e8f0; }
+        .service-card .icon-box { font-size: 2rem; color: var(--secondary); margin-bottom: 1rem; }
+        .service-card h3 { color: var(--primary); margin-bottom: 0.75rem; font-size: 1.3rem; }
+        .service-card p { color: #475569; font-size: 0.95rem; margin-bottom: 1rem; }
+        .service-card ul { list-style: none; }
+        .service-card ul li { font-size: 0.88rem; color: #64748b; margin-bottom: 0.4rem; display: flex; align-items: center; gap: 8px; }
+        .service-card ul li i { color: #10b981; font-size: 0.8rem; }
+
+        footer { background: var(--primary); color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
+        footer .address-footer { font-size: 0.9rem; margin-top: 10px; color: #94a3b8; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">KANHA <span>YUJALASH</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Loan Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Our Comprehensive Financial Offerings</h1>
+        <p>In strategic partnership with GroMo, BankSathi, IDFC FIRST Partner, and Urban Money.</p>
+    </section>
+
+    <main class="container">
+        <div class="services-grid">
+            
+            <!-- Personal Loan -->
+            <div class="service-card">
+                <div class="icon-box"><i class="fas fa-user-check"></i></div>
+                <h3>Personal Loans</h3>
+                <p>Instant personal loans for salaried and self-employed individuals with minimal documentation.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Unsecured Loans up to ₹40 Lakhs</li>
+                    <li><i class="fas fa-check"></i> Flexible Tenure (12 to 72 months)</li>
+                    <li><i class="fas fa-check"></i> Fast Digital Processing & Disbursal</li>
+                </ul>
+            </div>
+
+            <!-- Business Loan -->
+            <div class="service-card">
+                <div class="icon-box"><i class="fas fa-briefcase"></i></div>
+                <h3>Business Loans</h3>
+                <p>Fuel your business expansion, working capital needs, and equipment purchase with easy terms.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Collateral-Free Loans for MSMEs</li>
+                    <li><i class="fas fa-check"></i> Competitive Interest Rates</li>
+                    <li><i class="fas fa-check"></i> Customized Repayment Options</li>
+                </ul>
+            </div>
+
+            <!-- Home Loan -->
+            <div class="service-card">
+                <div class="icon-box"><i class="fas fa-home"></i></div>
+                <h3>Home Loans & Balance Transfer</h3>
+                <p>Turn your home ownership dream into reality with lowest interest rates from top banks.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Up to 90% Property Funding</li>
+                    <li><i class="fas fa-check"></i> Easy Balance Transfer Options</li>
+                    <li><i class="fas fa-check"></i> Long Tenure up to 30 Years</li>
+                </ul>
+            </div>
+
+            <!-- LAP -->
+            <div class="service-card">
+                <div class="icon-box"><i class="fas fa-building"></i></div>
+                <h3>Loan Against Property (LAP)</h3>
+                <p>Unlock the hidden value of your residential or commercial property for high-value capital needs.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> High Ticket Disbursals</li>
+                    <li><i class="fas fa-check"></i> Lower EMI burdens with longer tenures</li>
+                    <li><i class="fas fa-check"></i> Residential & Commercial accepted</li>
+                </ul>
+            </div>
+
+            <!-- Credit Cards & OD -->
+            <div class="service-card">
+                <div class="icon-box"><i class="fas fa-credit-card"></i></div>
+                <h3>Credit Cards & Overdraft (OD)</h3>
+                <p>Access instant credit limits and credit cards from major banks through our direct partner channels.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Premium & Lifetime-Free Cards</li>
+                    <li><i class="fas fa-check"></i> Business Overdraft Limits</li>
+                    <li><i class="fas fa-check"></i> Instant Online Approval</li>
+                </ul>
+            </div>
+
+            <!-- Emergency Short-Term Loan -->
+            <div class="service-card" style="border: 2px solid var(--secondary);">
+                <div class="icon-box"><i class="fas fa-bolt" style="color: #f59e0b;"></i></div>
+                <h3>1-Month Emergency Loan</h3>
+                <p>In-house specialized underwriting for urgent short-term capital requirements with fast verification.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> In-House CRO Credit Audit</li>
+                    <li><i class="fas fa-check"></i> CIBIL & Bank Statement Based</li>
+                    <li><i class="fas fa-check"></i> Direct CFO Disbursal & Recovery Desk</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 KANHA YUJALASH PVT LTD. All Rights Reserved.</p>
+        <p class="address-footer"><i class="fas fa-map-marker-alt"></i> Agrawal House, In Front of Hero Showroom, Dongargarh, Rajnandgaon, Chhattisgarh - 491445</p>
+    </footer>
+
+</body>
+</html>
