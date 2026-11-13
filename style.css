@@ -1,0 +1,25 @@
+:root {
+  --primary-blue: #1a3c6d;
+  --primary-gold: #c59c5e;
+  --text-light: #ffffff;
+  --text-dark: #333333;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: #f4f7f6; color: var(--text-dark); line-height: 1.6; }
+header { background-color: var(--primary-blue); padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.logo-container { display: flex; align-items: center; gap: 15px; color: var(--text-light); text-decoration: none; }
+.logo-img { height: 50px; width: auto; }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav ul li a { color: var(--text-light); text-decoration: none; font-weight: bold; transition: color 0.3s; }
+nav ul li a:hover { color: var(--primary-gold); }
+.hero { background: linear-gradient(rgba(26, 60, 109, 0.9), rgba(26, 60, 109, 0.9)), url('hero-bg.jpg') center/cover; color: var(--text-light); padding: 100px 20px; text-align: center; }
+.hero h1 { font-size: 3rem; color: var(--primary-gold); margin-bottom: 20px; }
+.section-title { text-align: center; color: var(--primary-blue); margin: 40px 0 20px; font-size: 2rem; }
+.team-container, .services-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 20px 50px 50px; }
+.card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; width: 250px; transition: transform 0.3s, border-bottom 0.3s; border-bottom: 4px solid transparent; }
+.card:hover { transform: translateY(-10px); border-bottom: 4px solid var(--primary-gold); }
+.card img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary-gold); margin-bottom: 15px; }
+.card h3 { color: var(--primary-blue); margin-bottom: 5px; }
+.card p { font-size: 0.9rem; color: #666; }
+.contact-info { text-align: center; padding: 40px; background: white; margin: 20px 50px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+footer { background: var(--primary-blue); color: var(--text-light); text-align: center; padding: 20px; margin-top: 40px; }
