@@ -1,44 +1,225 @@
+/* 1. Importing Premium Google Font (Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 :root {
-  --primary-blue: #1a3c6d;
-  --primary-gold: #c59c5e;
-  --text-light: #ffffff;
-  --text-dark: #333333;
+  --primary-navy: #0B192C; /* Very dark premium navy */
+  --primary-blue: #1A365D;
+  --accent-gold: #D4AF37; /* Royal Gold */
+  --bg-color: #F4F7F9; /* Very soft premium grey/blue for background */
+  --card-bg: #FFFFFF;
+  --text-main: #334155;
 }
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-body { background-color: #f4f7f6; color: var(--text-dark); line-height: 1.6; }
 
-header { background-color: var(--primary-blue); padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-.logo-container { display: flex; align-items: center; gap: 15px; color: var(--text-light); text-decoration: none; }
-.logo-img { height: 50px; width: auto; object-fit: contain; }
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: 'Poppins', sans-serif; 
+}
 
-nav ul { list-style: none; display: flex; gap: 20px; }
-nav ul li a { color: var(--text-light); text-decoration: none; font-weight: bold; transition: color 0.3s; }
-nav ul li a:hover { color: var(--primary-gold); }
+body { 
+  background-color: var(--bg-color); 
+  color: var(--text-main); 
+  line-height: 1.7; 
+}
 
-.hero { background: linear-gradient(135deg, var(--primary-blue), #2a5298); color: var(--text-light); padding: 80px 20px; text-align: center; }
-.hero h1 { font-size: 3rem; color: var(--primary-gold); margin-bottom: 20px; }
-.hero p { max-width: 800px; margin: 0 auto 15px auto; font-size: 1.1rem; }
+/* --- PREMIUM WHITE HEADER (Logo will blend perfectly here) --- */
+header {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo-container { 
+  display: flex; 
+  align-items: center; 
+  gap: 15px; 
+  text-decoration: none; 
+}
+.logo-img { 
+  height: 55px; 
+  width: auto; 
+}
+.logo-container h2 { 
+  color: var(--primary-navy); 
+  font-weight: 700; 
+  font-size: 1.6rem; 
+  letter-spacing: 0.5px; 
+}
 
-.section-title { text-align: center; color: var(--primary-blue); margin: 40px 0 20px; font-size: 2rem; }
-.team-container, .services-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 20px 50px 50px; }
+nav ul { 
+  list-style: none; 
+  display: flex; 
+  gap: 35px; 
+}
+nav ul li a { 
+  color: var(--primary-navy); 
+  text-decoration: none; 
+  font-weight: 600; 
+  font-size: 1.05rem; 
+  transition: all 0.3s ease; 
+  position: relative; 
+}
+/* Header Links Hover Effect */
+nav ul li a::after { 
+  content: ''; 
+  position: absolute; 
+  width: 0; 
+  height: 3px; 
+  bottom: -6px; 
+  left: 0; 
+  background-color: var(--accent-gold); 
+  transition: width 0.3s ease; 
+  border-radius: 2px; 
+}
+nav ul li a:hover::after { width: 100%; }
+nav ul li a:hover { color: var(--accent-gold); }
 
-.card { background: white; padding: 30px 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; width: 300px; transition: transform 0.3s, border-bottom 0.3s; border-bottom: 4px solid transparent; }
-.card:hover { transform: translateY(-10px); border-bottom: 4px solid var(--primary-gold); }
-.card h3 { color: var(--primary-blue); margin-bottom: 5px; font-size: 1.3rem; }
-.card h4 { color: var(--primary-gold); margin-bottom: 15px; font-weight: 600; }
-.card p { font-size: 0.95rem; color: #555; text-align: justify; line-height: 1.5; }
+/* --- HERO SECTION (Gradient Rich Look) --- */
+.hero {
+  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-blue) 100%);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(11, 25, 44, 0.2);
+}
+.hero h1 { 
+  font-size: 3.5rem; 
+  color: var(--accent-gold); 
+  margin-bottom: 20px; 
+  font-weight: 700; 
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.4); 
+}
+.hero p { 
+  font-size: 1.2rem; 
+  max-width: 800px; 
+  margin: 0 auto 15px auto; 
+  color: #E2E8F0; 
+  font-weight: 300; 
+}
 
-.contact-info { text-align: center; padding: 40px; background: white; margin: 20px auto; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 600px; }
-footer { background: var(--primary-blue); color: var(--text-light); text-align: center; padding: 20px; margin-top: 40px; }
+/* --- SECTION TITLES --- */
+.section-title { 
+  text-align: center; 
+  color: var(--primary-navy); 
+  margin: 70px 0 40px; 
+  font-size: 2.5rem; 
+  font-weight: 700; 
+}
+.section-title::after { 
+  content: ''; 
+  display: block; 
+  width: 80px; 
+  height: 4px; 
+  background: var(--accent-gold); 
+  margin: 15px auto 0; 
+  border-radius: 5px; 
+}
 
-/* MOBILE RESPONSIVE FIX */
+/* --- 3D PREMIUM CARDS --- */
+.team-container, .services-container { 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 40px; 
+  padding: 20px 5% 70px; 
+}
+.card {
+  background: var(--card-bg);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.04);
+  width: 330px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+/* Card Hover Top Line Animation */
+.card::before {
+  content: ''; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 6px;
+  background: linear-gradient(90deg, var(--accent-gold), #FFDF00);
+  transform: scaleX(0); 
+  transform-origin: left; 
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+.card:hover::before { transform: scaleX(1); }
+.card:hover { 
+  transform: translateY(-15px); 
+  box-shadow: 0 25px 50px rgba(26, 54, 93, 0.15); 
+  border-color: transparent; 
+}
+
+.card h3 { 
+  color: var(--primary-navy); 
+  font-size: 1.5rem; 
+  margin-bottom: 8px; 
+  font-weight: 700; 
+}
+.card h4 { 
+  color: var(--accent-gold); 
+  font-size: 1.1rem; 
+  margin-bottom: 25px; 
+  font-weight: 600; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+}
+.card p { 
+  font-size: 0.95rem; 
+  color: #64748B; 
+  line-height: 1.7; 
+  text-align: justify; 
+}
+
+/* --- CONTACT INFO BOX --- */
+.contact-info {
+  background: var(--card-bg); 
+  padding: 50px; 
+  margin: 0 auto 70px; 
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05); 
+  max-width: 650px; 
+  text-align: center;
+  border-top: 5px solid var(--primary-navy);
+}
+.contact-info h3 { color: var(--primary-navy); font-size: 1.5rem; margin-bottom: 15px; font-weight: 700;}
+.contact-info p { color: #64748B; font-size: 1.1rem; margin-bottom: 12px; }
+.contact-info a { color: var(--accent-gold); text-decoration: none; font-weight: 700; font-size: 1.2rem; }
+
+/* --- FOOTER --- */
+footer { 
+  background: var(--primary-navy); 
+  color: #94A3B8; 
+  text-align: center; 
+  padding: 30px 20px; 
+  border-top: 4px solid var(--accent-gold); 
+}
+footer p { margin-bottom: 8px; font-size: 0.95rem; }
+
+/* --- MOBILE RESPONSIVE --- */
 @media screen and (max-width: 768px) {
-  header { flex-direction: column; padding: 15px; gap: 15px; }
-  .logo-container { flex-direction: column; text-align: center; gap: 10px; }
-  nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
-  .hero { padding: 50px 20px; }
+  header { flex-direction: column; padding: 20px; gap: 15px; }
+  .logo-container { flex-direction: column; text-align: center; gap: 8px; }
+  nav ul { flex-wrap: wrap; justify-content: center; gap: 20px; }
+  .hero { padding: 60px 20px; }
   .hero h1 { font-size: 2.2rem; }
-  .team-container, .services-container { padding: 10px 20px 40px; }
-  .card { width: 100%; }
-  .contact-info { margin: 20px; padding: 25px 15px; }
+  .section-title { font-size: 2.2rem; margin: 50px 0 30px; }
+  .card { width: 100%; max-width: 400px; padding: 30px 25px; }
+  .contact-info { padding: 40px 20px; margin: 0 20px 50px; }
 }
